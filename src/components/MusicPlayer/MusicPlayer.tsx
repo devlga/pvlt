@@ -7,6 +7,7 @@ import {
 } from "motion/react";
 import useMusicStore from "./store/useMusicStore";
 import Icons from "../Icons/Icons";
+const {BASE_URL} = import.meta.env; 
 
 const variants = {
   closed: {
@@ -86,7 +87,7 @@ export default function MusicPlayer({ ...props }) {
             {/* 3. Apply the MotionValue to the style prop */}
             <motion.img
               style={{ rotate }} 
-              src={currentSong.imageSrc}
+              src={BASE_URL + currentSong.imageSrc}
               className="inline-block h-full w-full scale-120 bg-gray-300 rounded-full shadow-sm"
             />
           </div>

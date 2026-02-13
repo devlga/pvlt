@@ -7,28 +7,28 @@ const SONGS = [
     artist: "Up Dharma Down",
     volume: 0.05,
     audioSrc: BASE_URL +  "/1.mp3",
-    imageSrc: BASE_URL +  "/1.jpg",
+    imageSrc: "/1.jpg",
   },
   {
     title: "Stay (With Me)",
     artist: "Nina",
     volume: 0.2,
     audioSrc: BASE_URL +  "/2.mp3",
-    imageSrc: BASE_URL +  "/2.webp"
+    imageSrc: "/2.webp"
   },
   {
     title: "Ikaw Lamang",
     artist: "Silent Sanctuary",
     volume: 0.2,
     audioSrc: BASE_URL +  "/3.mp3",
-    imageSrc: BASE_URL +  "/3.jpg"
+    imageSrc: "/3.jpg"
   },
   {
     title: "Sparks",
     artist: "Coldplay",
     volume: 0.2,
     audioSrc: BASE_URL +  "/4.mp3",
-    imageSrc: BASE_URL +  "/4.jpg"
+    imageSrc: "/4.jpg"
   }
 ];
 const audio = new Audio();
