@@ -4,6 +4,8 @@ import { motion } from "motion/react";
 import "./App.css";
 import useMusicStore from "./components/MusicPlayer/store/useMusicStore";
 import MusicPlayer from "./components/MusicPlayer/MusicPlayer";
+const {BASE_URL} = import.meta.env; 
+
 
 function Intro() {
   const showMusicPlayer = useMusicStore((state) => state.showMusicPlayer);
@@ -13,8 +15,8 @@ function Intro() {
 
   useLayoutEffect(() => {
           window.scrollTo(0, 0)
-    new Image().src  = "/justin.jpg"
-    new Image().src = "/kate.jpg"
+    new Image().src  = BASE_URL + "/justin.jpg"
+    new Image().src = BASE_URL + "/kate.jpg"
   }, [])
 
 
@@ -44,7 +46,7 @@ function Intro() {
             </h1>{" "}
             <img
               className="w-15 h-15 ml-4 rounded-full inline-block object-cover outline outline-3 outline-white"
-              src="/justin.jpg"
+              src={BASE_URL + "/justin.jpg"}
               fetchPriority="high"
             />
             <br />
@@ -54,7 +56,7 @@ function Intro() {
             </h1>
             <img
               className="w-15 h-15 mx-4 rounded-full inline-block object-cover outline outline-3 outline-white"
-              src="/kate.jpg"
+              src={BASE_URL + "/kate.jpg"}
                             fetchPriority="high"
 
             />

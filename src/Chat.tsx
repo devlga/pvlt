@@ -1,7 +1,7 @@
 import "./App.css"
 import React, { useState, useEffect, useRef } from 'react';
 import { motion, useScroll, useSpring, useInView } from 'framer-motion';
-
+const {BASE_URL} = import.meta.env; 
 const Message = ({ text, side, index }) => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: false, margin: "-10% 0px -10% 0px" });
@@ -21,7 +21,7 @@ const Message = ({ text, side, index }) => {
       }}
       className={`flex w-full mb-10 ${isLeft ? 'justify-start' : 'justify-end'} items-end`}
     >
-      {side === "left" &&               <img className="aspect-square max-w-15 max-h-15 object-cover rounded-full" src={'/justin.jpg'} />
+      {side === "left" &&               <img className="aspect-square max-w-15 max-h-15 object-cover rounded-full" src={BASE_URL + '/justin.jpg'} />
 }
       <div 
         className={`max-w-[70%] min-w-[80px] p-4 rounded-2xl shadow-md ${
@@ -37,7 +37,7 @@ const Message = ({ text, side, index }) => {
           {text}
         </p>
       </div>
-{side === "right" &&               <img className="aspect-square max-w-15 max-h-15 object-cover rounded-full" src={'/kate.jpg'} />
+{side === "right" &&               <img className="aspect-square max-w-15 max-h-15 object-cover rounded-full" src={BASE_URL + '/kate.jpg'} />
 }
     </motion.div>
   );
