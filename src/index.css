@@ -1,0 +1,60 @@
+@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@font-face {
+  font-family: 'New French';
+  src: url('/newfrench.ttf') format('truetype')
+}
+@font-face {
+  font-family: 'Nunito';
+  src: url('/NunitoVariableFont.ttf') format('truetype-variations')
+}
+
+
+* {
+  font-family: "Nunito"
+}
+
+h1, h2, h3, h4, h5, h6, p, span {
+  user-select: none;
+}
+
+.animateScroll {
+  opacity: 1;
+  animation: fadeInOpacity 1.4s ease-in 1;
+}
+
+.animateScroll::after {
+  animation: m-1-ball 2s cubic-bezier(0.215, 0.61, 0.355, 1) infinite
+}
+
+@keyframes m-1-ball {
+  0%, 65%, 100% {
+    opacity: 0
+  }
+
+  10%, 40% {
+    opacity: 1
+  }
+  	0% {
+		transform: translateY(5px) scale(.7)}
+	5% {
+		transform: scale(.7) }
+	15%, 100% { 
+		transform: scale(1) }
+	45%, 65% {
+		transform: translateY(24px) scale(.7) }
+}
+
+
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
