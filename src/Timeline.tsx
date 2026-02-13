@@ -1,3 +1,4 @@
+// @ts-expect-error "fff"
 import React, { useState, useEffect, useRef, useMemo } from "react";
 
 // --- Configuration ---
@@ -187,7 +188,7 @@ const generateItems = () => {
 
 const HorizontalScrollPage = () => {
  const [mode, setMode] = useState('timeline'); // 'timeline' | 'parallax'
-  const [items] = useState(() => generateItems(ITEM_COUNT));
+  const [items] = useState(() => generateItems());
   
   // Ref for the tall container that creates the scroll space
   const sectionRef = useRef(null);

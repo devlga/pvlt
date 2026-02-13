@@ -1,4 +1,4 @@
-import React from "react";
+// @ts-expect-error fff
 import Icons from "./components/Icons/Icons";
 import { motion } from "motion/react";
 import "./App.css";

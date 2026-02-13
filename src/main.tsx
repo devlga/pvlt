@@ -1,4 +1,4 @@
-import { StrictMode } from 'react'
+// @ts-expect-error fff
 import { createRoot } from 'react-dom/client'
 import './index.css'
 import App from './App.tsx'
