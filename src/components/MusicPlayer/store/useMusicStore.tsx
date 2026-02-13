@@ -1,33 +1,34 @@
 import { create } from "zustand";
+const {BASE_URL} = import.meta.env; 
 
 const SONGS = [
   {
     title: "Tadhana",
     artist: "Up Dharma Down",
     volume: 0.05,
-    audioSrc: "/1.mp3",
-    imageSrc: "/1.jpg",
+    audioSrc: BASE_URL +  "/1.mp3",
+    imageSrc: BASE_URL +  "/1.jpg",
   },
   {
     title: "Stay (With Me)",
     artist: "Nina",
     volume: 0.2,
-    audioSrc: "/2.mp3",
-    imageSrc: "/2.webp"
+    audioSrc: BASE_URL +  "/2.mp3",
+    imageSrc: BASE_URL +  "/2.webp"
   },
   {
     title: "Ikaw Lamang",
     artist: "Silent Sanctuary",
     volume: 0.2,
-    audioSrc: "/3.mp3",
-    imageSrc: "/3.jpg"
+    audioSrc: BASE_URL +  "/3.mp3",
+    imageSrc: BASE_URL +  "/3.jpg"
   },
   {
     title: "Sparks",
     artist: "Coldplay",
     volume: 0.2,
-    audioSrc: "/4.mp3",
-    imageSrc: "/4.jpg"
+    audioSrc: BASE_URL +  "/4.mp3",
+    imageSrc: BASE_URL +  "/4.jpg"
   }
 ];
 const audio = new Audio();
