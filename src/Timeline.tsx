@@ -18,147 +18,147 @@ const TIMELINE_DATA = [
     title: "Just Met",
     description:
       "They started their journey - just talking and getting to know each other.",
-    src: BASE_URL + `/timeline1.jpg`,
+    src: `/timeline1.jpg`,
   },
   {
     date: "Feb. 2025",
     title: "Started Courting",
     description:
       "He convinced her to open your heart for him.",
-    src: BASE_URL + `/timeline2.jpg`,
+    src: `/timeline2.jpg`,
   },
     {
     date: "Feb. 2025",
     title: "Started OJT",
     description:
       "She started the last part of her journey in college.",
-    src: BASE_URL + `/timeline3.jpg`,
+    src: `/timeline3.jpg`,
   },
   {
     date: "Mar. 2025",
     title: "Officially Dating",
     description:
       "They officially became a power couple.",
-    src: BASE_URL + `/timeline4.jpg`,
+    src: `/timeline4.jpg`,
   },
   {
     date: "Apr. 2025",
     title: "First Monthsary",
     description:
       "They officially spend a month together.",
-    src: BASE_URL + `/timeline5.jpg`,
+    src: `/timeline5.jpg`,
   },
     {
     date: "May 2025",
     title: "Her Brother Graduated",
     description:
       "Her brother graduated college - they were both proud.",
-    src: BASE_URL + `/timeline6.jpg`,
+    src: `/timeline6.jpg`,
   },
     {
     date: "Jul. 2025",
     title: "Kate Graduated",
     description:
       "His proudest moment was her holding that certificate in her hand.",
-    src: BASE_URL + `/timeline7.jpg`,
+    src: `/timeline7.jpg`,
   },
     {
     date: "Aug. 2025",
     title: "Justin's Birthday",
     description:
       "She surprised him with a cake and a birthday hat - this was his second happiest moment.",
-    src: BASE_URL + `/timeline8.jpg`,
+    src: `/timeline8.jpg`,
   },
       {
     date: "Aug. 2025",
     title: "First Flight to Manila",
     description:
       "His first flight ever was to see her, he remained strong although he flew alone.",
-    src: BASE_URL + `/timeline9.jpg`,
+    src: `/timeline9.jpg`,
   },
     {
     date: "Sep. 2025",
     title: "Meet In Person",
     description:
       "They met in Manila and explored the city together.",
-    src: BASE_URL + `/timeline10.jpg`,
+    src: `/timeline10.jpg`,
   },
       {
     date: "Sep. 2025",
     title: "SM Mall of Asia",
     description:
       "She brought him to a giant mall for the first time.",
-    src: BASE_URL + `/timeline11.jpg`,
+    src: `/timeline11.jpg`,
   },
         {
     date: "Sep. 2025",
     title: "Intramuros Trip",
     description:
       "They explored history together and he got to hold her hand for the entire time.",
-    src: BASE_URL + `/timeline12.jpg`,
+    src: `/timeline12.jpg`,
   },
           {
     date: "Sep. 2025",
     title: "Flight to Cauayan",
     description:
       "They fly together toward her home.",
-    src: BASE_URL + `/timeline13.jpg`,
+    src: `/timeline13.jpg`,
   },
           {
     date: "Sep. 2025",
     title: "First Time in Isabela",
     description:
       "He got to see the province for the first time. He met your family and lots of new friends.",
-    src: BASE_URL + `/timeline14.jpg`,
+    src: `/timeline14.jpg`,
   },
           {
     date: "Sep. 2025",
     title: "Kate's Birthday",
     description:
       "They got to celebrate another year of her life -- but this time together.",
-    src: BASE_URL + `/timeline15.jpg`,
+    src: `/timeline15.jpg`,
   },
           {
     date: "Sep. 2025",
     title: "Roadtrip to Baguio",
     description:
       "He got to experience how clingy you are while riding.",
-    src: BASE_URL + `/timeline16.jpg`,
+    src: `/timeline16.jpg`,
   },
           {
     date: "Sep. 2025",
     title: "Made It to Baguio",
     description:
       "They made it to Baguio and got to experience its beauty together.",
-    src: BASE_URL + `/timeline17.jpg`,
+    src: `/timeline17.jpg`,
   },
           {
     date: "Sep. 2025",
     title: "Justin Goes Back Home",
     description:
       "Justin goes back home. It was a sad goodbye for them both.",
-    src: BASE_URL + `/timeline18.jpg`,
+    src: `/timeline18.jpg`,
   },
     {
     date: "Oct. 2025",
     title: "Kate Moves to Baguio",
     description:
       "Kate moves to Baguio to finally start the next chapter of her life.",
-    src: BASE_URL + `/timeline19.jpg`,
+    src: `/timeline19.jpg`,
   },
     {
     date: "Nov. 2025",
     title: "First Job",
     description:
       "She finally got accepted to her first job!",
-    src: BASE_URL + `/timeline20.jpg`,
+    src: `/timeline20.jpg`,
   },
       {
     date: "Feb. 2026",
     title: "First Valentine's Day",
     description:
       "They look back on how far they've made it together.",
-    src: BASE_URL + `/timeline21.jpg`,
+    src: `/timeline21.jpg`,
   }
 ];
 const generateItems = () => {
@@ -171,7 +171,7 @@ const generateItems = () => {
       date: datum.date,
       title: datum.title,
       description: datum.description,
-      src: BASE_URL +  datum.src,
+      src: BASE_URL + datum.src,
 
       // Timeline Mode (Linear)
       t_x: i * (ITEM_WIDTH + GAP) + SIDE_PADDING,
